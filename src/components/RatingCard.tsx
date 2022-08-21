@@ -15,7 +15,7 @@ export const RatingCard = ({
   return (
     <form onSubmit={onSubmit}>
       <div className="rounded-full w-10 h-10 bg-dark-blue flex justify-center items-center mb-4">
-        <img src={star} alt="" width="14px" height="14px" />
+        <img src={star} alt="" width="14" height="14" />
       </div>
       <h1 className="text-white text-2xl">How did we do?</h1>
       <p className="text-sm text-light-grey font-normal leading-[1.375rem] pt-3">
