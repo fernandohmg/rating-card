@@ -17,6 +17,9 @@ module.exports = {
       fontFamily: {
         sans: ["Overpass", "sans-serif"],
       },
+      screens: {
+        "hover-hover": { raw: "(hover: hover)" },
+      },
     },
   },
   plugins: [],

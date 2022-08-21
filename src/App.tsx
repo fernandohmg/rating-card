@@ -19,7 +19,7 @@ function App() {
 
   return (
     <main className="bg-very-dark-blue min-h-full flex justify-center items-center p-6">
-      <article className="bg-gradient-radial rounded-[0.938rem] p-6 sm:p-8 max-w-[416px]">
+      <article className="bg-gradient-radial rounded-[0.938rem] p-6 sm:p-8 max-w-[416px] flex flex-col justify-center items-center">
         {!showConfirmation ? (
           <RatingCard
             selectedRate={rate}
