@@ -1,15 +1,6 @@
 import { RadioGroup } from "@headlessui/react";
 import star from "../assets/star.svg";
 import { RateOption } from "./RateOption";
-
-enum Rate {
-  RATE_1 = 1,
-  RATE_2 = 2,
-  RATE_3 = 3,
-  RATE_4 = 4,
-  RATE_5 = 5,
-}
-
 interface RatingCardProps {
   selectedRate: number;
   onRateButtonClick: (rate: number) => void;
@@ -37,11 +28,11 @@ export const RatingCard = ({
         className="flex justify-between py-6"
       >
         <RadioGroup.Label className="sr-only">Rate</RadioGroup.Label>
-        <RateOption value={Rate.RATE_1} />
-        <RateOption value={Rate.RATE_2} />
-        <RateOption value={Rate.RATE_3} />
-        <RateOption value={Rate.RATE_4} />
-        <RateOption value={Rate.RATE_5} />
+        <RateOption value={1} />
+        <RateOption value={2} />
+        <RateOption value={3} />
+        <RateOption value={4} />
+        <RateOption value={5} />
       </RadioGroup>
       <button
         disabled={!selectedRate}
